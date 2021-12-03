@@ -1,0 +1,11 @@
+<launch>
+  <!-- 3D sensor -->
+  <include file="$(find rplidar_turtlebot_nav)/launch/includes/rplidar.launch"/>
+
+  <!-- Gmapping -->
+  <include file="$(find rplidar_turtlebot_nav)/launch/includes/rplidar_gmapping.launch.xml"/>
+
+  <!-- Move base -->
+  <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml"/>
+
+</launch>
